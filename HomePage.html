@@ -1,0 +1,513 @@
+<html>
+    <head>
+
+        <title>Flex masters</title>
+        <link rel="icon" type="image/x-icon" href="https://cdn5.vectorstock.com/i/1000x1000/72/44/bodybuilder-logo-icon-on-white-background-vector-18167244.jpg">
+
+        <style>
+            
+.navbar {
+              overflow: hidden;
+              background-color: rgb(136, 3, 3);
+              position: fixed;
+              top: 0;
+              width: 100%;
+              z-index: 1;
+}
+            
+.navbar a {
+              float: left;
+              display: block;
+              color: #f2f2f2;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 17px;
+              box-shadow: 5px black;
+              border-radius: 10px ;
+              position: sticky;
+}
+            
+.navbar a:hover {
+              background: #fcf8f8;
+              color: rgb(136, 3, 3);
+}
+            
+.main {
+              padding: 16px;
+              margin-top: 60px;
+              height: 1500px; /* Used in this example to enable scrolling */
+ }
+
+
+.navbar-right {
+             float: right;
+}
+div.relative {
+  position: relative;
+  width: 750px;
+  height: 200px;
+  border: 0px solid rgb(136, 3, 3);
+} 
+
+div.absolute {
+  position: absolute;
+  top: 8px;
+  left: 470px;
+  border: 2px solid rgb(136, 3, 3);
+}
+#field{
+  margin-top: 5px;
+  margin-right: 280px;
+  margin-left: 5px;
+  border: 2px solid rgb(136, 3, 3);
+} 
+.title{
+              color: rgb(136, 3, 3);
+              font-size: 1.5555555556rem;
+              font-family: opensans-bold,sans-serif;
+              font-style: normal;
+              font-weight: 40px;
+              margin-bottom: 0.5rem;
+ }
+ p {
+    margin-bottom: 1rem;
+    font: italic 15px Georgia;
+    font-size: medium;
+    line-height: 1.5;
+    /*text-rendering: optimizeLegibility; when optimize engine */
+  }
+#Exercises {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#Exercises td, #Exercises th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#Exercises tr:nth-child(even){background-color: #f2f2f2;}
+
+#Exercises tr:hover {background-color: #ddd;}
+
+#Exercises th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(136, 3, 3);
+  color: white;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: white;
+  color: rgb(136, 3, 3);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(136, 3, 3);
+  color: white;
+
+}
+
+#contactus {
+  size: 0cap;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+  background-color: rgb(136, 3, 3);
+  padding: 20px;
+}
+#field2{
+  border: 2px solid white;
+} 
+
+
+
+.dropdown-content {
+  display: none;
+  background-color: #f1f1f1;
+}
+
+.dropdown-content a {
+  color: #f2f2f2;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin-block: 10px;
+}
+
+.dropdown-content a:hover {background: #fcf8f8; color: rgb(136, 3, 3);}
+
+.dropdown:hover .dropdown-content {display: block;} 
+
+#Btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:rgb(136, 3, 3);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#Btn:hover {
+  background-color: azure;
+  color: rgb(136, 3, 3);;
+}
+            </style>
+
+    </head>
+
+
+
+    <body>
+      <header>
+        <nav>
+          <div class="navbar">
+              <a href=""><img src="https://e1.pxfuel.com/desktop-wallpaper/750/154/desktop-wallpaper-wall-art-print-arnold-bodybuilding-bodybuilding-logo-thumbnail.jpg" height="25px" width="50px" alt="Logo"></a>
+              <a href="#a">About us</a>
+              <a href="#contactus">Contact us</a>
+
+
+              <div class="dropdown">
+                <a>Workouts & Program</a>
+               <div class="dropdown-content">
+              <a href="#w">Program</a>
+              <a href="#w1">Workout 1</a>
+              <a href="#w2">Workout 2</a>
+              <a href="#w3">Workout 3</a>
+              <a href="#w4">Workout 4</a>
+                </div>
+              </div>
+
+
+            
+              <div class="navbar-right">
+              <a href="LoginPage.html">Logout</a>
+                </div>
+          </div>
+          </nav>
+      </header>
+<main class="main">
+  <div id="a">
+    <div class="relative">    
+    <fieldset id="field">
+      <legend><b><i>About Us</i></b></legend>
+  
+      <b><i>The meaning of life is not simply to exist, to survive, but to move ahead, to go up, to conquer... <br> That's why You don't want just a gym membership. <br> You want a membership that means something. <br> And that means you need support, expert help and a community.Flex Masters isn't just a gym: it's a full-service fitness membership made for you . <a href="#contactus"> For more information :</a></i></b>
+    </fieldset>
+      <div class="absolute"><img src="https://img.freepik.com/photos-premium/bodybuilder-posant-fitness-homme-muscle-scene-sombre_136403-4206.jpg?w=2000" alt="" width="240px" height="150px"></div>
+    </div>
+    </div>
+
+    <div>
+      <h1 class="title"><b><i><u>Who Is This For?</u></i></b></h1>
+      <p>This is a program that will help intermediate and advanced trainees gain positive size and strength. Beginners and rookies may find this program to be too intense, and they could still learn more  about form and execution before taking on a program like this. Don’t worry, though. Flex Masters has plenty of  <a href="">programs</a> for those that are just starting out.</p>
+      <h1 class="title"><b><i><u>Principles of the Program</u></i></b></h1>
+      <p>In order to gain something that you don’t have, you need to do something that you don’t typically do. That means pushing yourself beyond what you normally perceive to be “failure.” That’s why some intensity boosting methods are going to be a part of this program.</p>
+      <center><img src="https://www.shutterstock.com/image-vector/stop-wishing-start-doing-fitness-600w-716930014.jpg" alt="stop-wishing-start-doing-fitness" width="400px" height="150px"></center>
+      <h1 class="title"><b><i><u>Nutrition</u></i></b></h1>
+      <p>As hard as you’re going to be training, you’re going to need to eat in order to recover and grow. That doesn’t mean you get to go crazy and eat whatever you want, whenever you want. Having a sound <a href="https://www.muscleandstrength.com/diet-plans" target="_blank">nutrition plan</a> will be very beneficial. Flex Masters actually has a great guide that can work well with this program. You can consider it or any of the other nutrition programs here designed to help you get bigger and stronger. I will offer two pieces of advice here:</p>
+      <ol>
+        <li><p>Eat Protein First – Protein is the nutrient that plays the biggest role in your recovery and growth. If you get full before the meal is completed, you don’t want protein left on the plate. This can also help you keep your blood sugar in check.
+          Take Your Time – It's food, not flavored oxygen. Take the time to properly chew</p></li>
+        <li><p>Take Your Time – It's food, not flavored oxygen. Take the time to properly chew and enjoy the meal you’re eating so it can be digested properly. Overwhelming your stomach by pounding down a lot of calories at warp speed won’t help you, and it will make you uncomfortable as well.</p></li>
+      </ol>
+      <h1 class="title"><b><i><u>Cardio</u></i></b></h1>
+      <p>Cardio is about more than burning calories and increasing metabolism. It’s good for heart health. So I don’t think you should ignore it completely. You can do three or four sessions of moderate level cardio a week at 20 minutes per session. You can do <a href="https://www.muscleandstrength.com/workouts/4-cardio-machine-workouts-to-maximize-fat-loss" target="_blank">these</a> in the morning or post-workout. Get them in when you’re able to get them in.</p>
+      <center><img src="https://media.istockphoto.com/id/663860058/photo/at-the-gym.jpg?s=612x612&w=0&k=20&c=-UfhsR1xhV90ImZb1Dir5U6o9b_hMwOp6VBZrK1m_k0=" alt="stop-wishing-start-doing-fitness" width="400px" height="150px"></center>
+      <h1 class="title" id="w"><b><i><u>The Workouts</u></i></b></h1>
+      <p>Now let’s talk about the training. This is a four-day routine. You will perform each workout once a week. The optimal way to do this would be by following this split:</p>
+      <ul>
+        <li>Monday – Chest and Side Delts</li>
+        <li>Tuesday – Upper Back and Rear Delts</li>
+        <li>Wednesday – Off</li>
+        <li>Thursday – Arms and Abs</li>
+        <li>Friday – Legs</li>
+        <li>Saturday and Sunday – Off</li>
+      </ul>
+    </div>
+    <div>
+      <h1 id="w1" class="title"><b><i>Workout 1: Chest and Side Delts</i></b></h1>
+      <table id="Exercises">
+        <tr>
+          <th>Exercise</th>
+          <th>Sets</th>
+          <th>Reps</th>
+          <th>Rest</th>
+        </tr>
+        <tr>
+          <td>Incline Barbell Bench Press</td>
+          <td>3</td>
+          <td>12, 10, 12*</td>
+          <td>90 Sec</td>
+        </tr>
+        <tr>
+          <td>Flat Dumbbell Bench Press</td>
+          <td>3</td>
+          <td>12, 10, 15+</td>
+          <td>90 Sec</td>
+        </tr>       
+         <tr>
+          <td>Cable Crossover</td>
+          <td>3</td>
+          <td>12, 12, 12</td>
+          <td>90 Sec</td>
+        </tr>       
+         <tr>
+          <td>Seated Lateral Raise</td>
+          <td>3</td>
+          <td>12, 12, 12</td>
+          <td>90 Sec</td>
+        </tr>      
+          <tr>
+          <td>Single Arm Cable Lateral Raise</td>
+          <td>3</td>
+          <td>12, 12, 12</td>
+          <td>90 Sec</td>
+        </tr>
+      </table>
+      <p>* Rest-Pause Set <br> + Drop Set</p>
+      
+    </div>
+    <div>
+      <h1 id="w2" class="title"><b><i>Workout 2: Upper Back and Rear Delts</i></b></h1>
+      <table id="Exercises">
+        <tr>
+          <th>Exercise</th>
+          <th>Sets</th>
+          <th>Reps</th>
+          <th>Rest</th>
+        </tr>
+        <tr>
+          <td>Bent-Over Barbell Row</td>
+          <td>3</td>
+          <td>12, 10, 12*</td>
+          <td>90 Sec</td>
+        </tr>
+        <tr>
+          <td>Dumbbell Pullover</td>
+          <td>3</td>
+          <td>12, 10, 15+</td>
+          <td>90 Sec</td>
+        </tr>       
+         <tr>
+          <td>Wide Grip Lat Pulldown</td>
+          <td>3</td>
+          <td>12, 12, 12</td>
+          <td>90 Sec</td>
+        </tr>       
+         <tr>
+          <td>Dumbbell Rear Delt Fly</td>
+          <td>3</td>
+          <td>12, 12, 12</td>
+          <td>90 Sec</td>
+        </tr>      
+          <tr>
+          <td>Cable Face Pull</td>
+          <td>3</td>
+          <td>12, 12, 12</td>
+          <td>90 Sec</td>
+        </tr>     
+          <tr>
+          <td>Cable Face Pull</td>
+          <td>3</td>
+          <td>12, 12, 12</td>
+          <td>90 Sec</td>
+        </tr>
+      </table>
+      <p>* Rest-Pause Set <br> + Drop Set</p>
+      
+    </div>
+    <div>
+      <h1 id="w3" class="title"><b><i>Workout 3: Arms and Abs</i></b></h1>
+      <table id="Exercises">
+        <tr>
+          <th>Exercise</th>
+          <th>Sets</th>
+          <th>Reps</th>
+          <th>Rest</th>
+        </tr>
+        <tr>
+          <td>Close Grip Bench Press</td>
+          <td>3</td>
+          <td>12, 10, 12*</td>
+          <td>90 Sec</td>
+        </tr>
+        <tr>
+          <td>Weighted Dip</td>
+          <td>3</td>
+          <td>12, 10, 12+</td>
+          <td>90 Sec</td>
+        </tr>       
+         <tr>
+          <td>Rope Tricep Extension</td>
+          <td>3</td>
+          <td>12, 12, 12</td>
+          <td>90 Sec</td>
+        </tr>       
+         <tr>
+          <td>Lying Leg Raise</td>
+          <td>3</td>
+          <td>12, 12, 12</td>
+          <td>90 Sec</td>
+        </tr>      
+          <tr>
+          <td>Cable Crunch</td>
+          <td>3</td>
+          <td>12, 12, 12</td>
+          <td>90 Sec</td>
+        </tr>     
+          <tr>
+          <td>Barbell Curl</td>
+          <td>3</td>
+          <td>12, 12, 12*</td>
+          <td>90 Sec</td>
+        </tr>
+        </tr>     
+          <tr>
+          <td>Hammer Curl</td>
+          <td>3</td>
+          <td>12, 10, 12+</td>
+          <td>90 Sec</td>
+        </tr>
+        <tr>
+          <td>Cable Curl</td>
+          <td>3</td>
+          <td>12, 12, 12</td>
+          <td>90 Sec</td>
+        </tr>
+      </table>
+      <p>* Rest-Pause Set <br> + Drop Set</p>
+      
+    </div>
+    <div>
+      <h1 id="w4" class="title"><b><i>Workout 4: Legs</i></b></h1>
+      <table id="Exercises">
+        <tr>
+          <th>Exercise</th>
+          <th>Sets</th>
+          <th>Reps</th>
+          <th>Rest</th>
+        </tr>
+        <tr>
+          <td>Deadlift</td>
+          <td>3</td>
+          <td>12, 10, 12*</td>
+          <td>90 Sec</td>
+        </tr>
+        <tr>
+          <td>Lying Leg Curl</td>
+          <td>3</td>
+          <td>12, 10, 12+</td>
+          <td>90 Sec</td>
+        </tr>       
+         <tr>
+          <td>Walking Lunge</td>
+          <td>3</td>
+          <td>12, 12, 12</td>
+          <td>90 Sec</td>
+        </tr>       
+         <tr>
+          <td>Front Squat</td>
+          <td>3</td>
+          <td>12, 10, 12*</td>
+          <td>90 Sec</td>
+        </tr>      
+          <tr>
+          <td>Leg Extension</td>
+          <td>3</td>
+          <td>12, 12, 12+</td>
+          <td>90 Sec</td>
+        </tr>     
+          <tr>
+          <td>Dumbbell Side Lunge</td>
+          <td>3</td>
+          <td>12, 12, 12</td>
+          <td>90 Sec</td>
+        </tr>
+        </tr>     
+          <tr>
+          <td>Seated Calf Raise</td>
+          <td>3</td>
+          <td>12, 12, 12</td>
+          <td>90 Sec</td>
+        </tr>
+        <tr>
+          <td>Calf Press</td>
+          <td>3</td>
+          <td>12, 12, 12</td>
+          <td>90 Sec</td>
+        </tr>
+      </table>
+      <p>* Rest-Pause Set <br> + Drop Set</p>
+      <br><br>
+      <HR align="center"></HR>
+      <br>
+      &nbsp;<p> !!!! Please don’t hesitate to contact us if you have any questions or need further information. We look forward to staying in touch and working together in the future</p>
+      
+    </div>
+    <div id="contactus">
+      <fieldset id="field2">
+        <center><legend><h2 style="color: white;" >Contact us</h1></legend></center>
+      <form action="thank.html" target="_blank">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Enter Your First name">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Enter Your Last name">
+
+        <label for="Mail">Email</label>
+        <input type="text" id="Mail" name="Email" placeholder="Enter Your Email">
+    
+        <label for="Subscription Plan"> Subscription Plan :</label>
+        <select id="Subs" name="Subs">
+          <option value="Subscription">Beginner</option>
+          <option value="Build Muscle">Pro</option>
+          <option value="Lose Fat">Vip</option>
+        </select>
+
+
+        <label for="Goal"> Choose Your Goal :</label>
+        <select id="Goal" name="Goal">
+          <option value="Build Muscle">Build Muscle</option>
+          <option value="Improve Sports Per">Improve Sports Performance</option>
+          <option value="Lose Fat">Lose Fat</option>
+          <option value="Increase Strength">Increase Strength</option>
+          <option value="Lifestyle">Healthy Lifestyle</option>
+        </select>
+        <input type="submit" value="Submit">
+      </form>
+    </fieldset>
+    </div>
+</main>
+
+
+<button onclick="topFunction()" id="Btn" title="Go to top">Top</button>
+
+<script src="ButtonTop.js"></script>
+    </body>
+</html>

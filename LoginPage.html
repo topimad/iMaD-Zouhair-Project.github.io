@@ -1,0 +1,141 @@
+<html>
+
+<head>
+<title>Flex masters</title>
+<link rel="icon" type="image/x-icon" href="https://cdn5.vectorstock.com/i/1000x1000/72/44/bodybuilder-logo-icon-on-white-background-vector-18167244.jpg">
+<style>
+     div{
+        background-color: white;
+            align-items: center;
+            border: 3px solid rgba(50, 18, 18, 0.304);
+          width:  200px;
+           /* margin-left: 400px;
+            margin-top: 75px;*/
+            padding: 75px;
+          margin: auto;
+          background-color: rgba(50, 18, 18, 0.304);
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: #f31212;
+            color: white;
+            padding: 17px 25px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #280101;
+}
+ body{
+    background-image: url("https://w0.peakpx.com/wallpaper/216/749/HD-wallpaper-red-grunge-texture-dark-red-grunge-background-creative-backgrounds-grunge-texture.jpg");
+    background-size: cover;
+ }
+ .ml4 {
+  position: relative;
+  font-weight: 100;
+  font-size: 4.5em;
+}
+.ml4 .letters {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0.3em;
+  right: 0;
+  opacity: 0; 
+}
+
+#cc{
+  text-align: center;
+}
+</style>
+
+ 
+</head>
+<body style="color: azure;">
+
+  <img src="https://cdn5.vectorstock.com/i/1000x1000/72/44/bodybuilder-logo-icon-on-white-background-vector-18167244.jpg" alt="" height="70px" width="70px">
+  <h1 class="ml4" id="cc">
+    <span class="letters letters-1">COME</span>
+    <span class="letters letters-2">FIND</span>
+    <span class="letters letters-3">YOUR SELF!</span>
+  </h1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+   <br><br><br><br><br><br>
+        <div>
+          <form action=" " onsubmit="return add()">
+        <label for="zou"><b><i>UserName:</i></b></label>
+        <input type="email" id="zou" placeholder="EnterUserName"><br>
+        <label for="gha"><b><i>Password:</i></b></label>
+        <input type="password" id="gha" placeholder="EnterPassword"><br>
+        <span id="less" style="color: red;"></span><br>
+        <input type="checkbox" onclick="showPss()"> <b><i>Show password</i></b>
+        <input type="submit" value="login" id="button" formaction="HomePage.html">
+       <input type="submit" value="SignUp" id="button" formaction="SignUpPage.html">
+       
+    </form>
+    </div>
+
+
+<script src="loginPage.js"></script>
+<script>
+  var ml4 = {};
+ml4.opacityIn = [0,1];
+ml4.scaleIn = [0.2, 1];
+ml4.scaleOut = 3;
+ml4.durationIn = 800;
+ml4.durationOut = 600;
+ml4.delay = 500;
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml4 .letters-1',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-1',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4 .letters-2',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-2',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4 .letters-3',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-3',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4',
+    opacity: 0,
+    duration: 500,
+    delay: 500
+  });
+</script>
+</body>
+
+
+
+
+</html>

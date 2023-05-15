@@ -1,0 +1,105 @@
+<html>
+<head>
+    <title>Flex masters</title>
+      <link rel="icon" type="image/x-icon" href="https://cdn5.vectorstock.com/i/1000x1000/72/44/bodybuilder-logo-icon-on-white-background-vector-18167244.jpg">
+<style>
+     div{
+        background-color: white;
+            align-items: center;
+            border: 3px solid rgba(50, 18, 18, 0.304);
+          width:  200px;
+           /* margin-left: 400px;
+            margin-top: 75px;*/
+            padding: 75px;
+          margin: auto;
+          background-color: rgba(50, 18, 18, 0.304);
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: #f31212;
+            color: white;
+            padding: 17px 25px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #280101;
+}
+ body{
+    background-image: url("https://w0.peakpx.com/wallpaper/216/749/HD-wallpaper-red-grunge-texture-dark-red-grunge-background-creative-backgrounds-grunge-texture.jpg");
+    background-size: cover;
+ }
+ .ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.3em;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+h1{
+    text-align: center;
+}
+</style>
+</head>
+<body style="color: azure;">
+    <img src="https://cdn5.vectorstock.com/i/1000x1000/72/44/bodybuilder-logo-icon-on-white-background-vector-18167244.jpg" alt="" height="70px" width="70px">
+    <h1 class="ml6">
+        <span class="text-wrapper">
+          <span class="letters"><i><u>WELCOME TO FLEX MASTERS</u></i></span>
+        </span>
+      </h1>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>    <div>
+        <form action="LoginPage.html" onsubmit="return add()">
+            <label for="zou"><b><i>Name:</i></b></label>
+            <input type="text" id="zou" placeholder="EnterName!"><br>
+            <label for="hhh"><b><i>First Name:</i></b></label>
+            <input type="text" id="hhh" placeholder="EnterFirst Name!"><br>
+            <label for="gha"><b><i>Mail:</i></b></label>
+            <input type="email" id="ggg" placeholder="Enter your mail!"><br>
+            <label for="gha"><b><i>Password:</i></b></label>
+            <input type="text" id="gha" placeholder="Enter Password!"><br>
+            <span id="less" style="color: red;"></span><br>
+            <input type="checkbox" onclick="showPss()"> <b><i>Show password</i></b>
+            <input type="submit" value="Sign In" id="button">
+           
+        </form>
+    </div>
+    <script src="loginPage.js"></script>
+    <script>
+        var textWrapper = document.querySelector('.ml6 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml6 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+    </script>
+</body>
+
+</html>
